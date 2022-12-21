@@ -33,6 +33,15 @@
       "url": "http://push.example.com",
       "apptoken": "token",
       "priority": 5
+    },
+    "email": {
+      "enabled": false,
+      "smtpHost": "smtp.gmail.com",
+      "smtpPort": 465,
+      "smtpUsername": "myUserName@gmail.com",
+      "smtpPassword": "myPassword",
+      "smtpEmail": "myUserName@gmail.com",
+      "smtpRecipient": "email@test.com"
     }
   },
   "messageFilter": {
