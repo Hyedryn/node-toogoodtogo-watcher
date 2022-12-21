@@ -41,7 +41,7 @@
       "smtpUsername": "myUserName@gmail.com",
       "smtpPassword": "myPassword",
       "smtpEmail": "myUserName@gmail.com",
-      "smtpRecipient": "email@test.com"
+      "recipient": "email@test.com"
     }
   },
   "messageFilter": {
