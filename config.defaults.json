@@ -1,54 +1,62 @@
-{
-  "api": {
-    "credentials": {
-      "email": "Email of your TooGoodToGo account."
+{"email": {},
+ "uuid": {
+    "api": {
+      "credentials": {
+        "email": "Email of your TooGoodToGo account."
+      },
+      "session": {},
+      "deviceType": "IOS",
+      "headers": {
+      },
+      "pollingIntervalInMs": 30000,
+      "authenticationIntervalInMS": 3600000
     },
-    "session": {},
-    "deviceType": "IOS",
-    "headers": {
+    "notifications": {
+      "console": {
+        "enabled": false,
+        "clear": true
+      },
+      "desktop": {
+        "enabled": false
+      },
+      "telegram": {
+        "enabled": false,
+        "botToken": "See README",
+        "chats": []
+      },
+      "ifttt": {
+        "enabled": false,
+        "webhookKey": "see README",
+        "webhookEvents": [
+          "see README"
+        ]
+      },
+      "gotify": {
+        "enabled": false,
+        "url": "http://push.example.com",
+        "apptoken": "token",
+        "priority": 5
+      },
+      "email": {
+        "enabled": false,
+        "smtpHost": "smtp.gmail.com",
+        "smtpPort": 465,
+        "smtpUsername": "myUserName@gmail.com",
+        "smtpPassword": "myPassword",
+        "smtpEmail": "myUserName@gmail.com",
+        "recipient": "email@test.com"
+      }
     },
-    "pollingIntervalInMs": 30000,
-    "authenticationIntervalInMS": 3600000
-  },
-  "notifications": {
-    "console": {
-      "enabled": false,
-      "clear": true
+    "messageFilter": {
+      "showUnchanged": false,
+      "showDecrease": false,
+      "showDecreaseToZero": false,
+      "showIncrease": false,
+      "showIncreaseFromZero": true
     },
-    "desktop": {
-      "enabled": false
-    },
-    "telegram": {
-      "enabled": false,
-      "botToken": "See README",
-      "chats": []
-    },
-    "ifttt": {
-      "enabled": false,
-      "webhookKey": "see README",
-      "webhookEvents": ["see README"]
-    },
-    "gotify": {
-      "enabled": false,
-      "url": "http://push.example.com",
-      "apptoken": "token",
-      "priority": 5
-    },
-    "email": {
-      "enabled": false,
-      "smtpHost": "smtp.gmail.com",
-      "smtpPort": 465,
-      "smtpUsername": "myUserName@gmail.com",
-      "smtpPassword": "myPassword",
-      "smtpEmail": "myUserName@gmail.com",
-      "recipient": "email@test.com"
-    }
-  },
-  "messageFilter": {
-    "showUnchanged": false,
-    "showDecrease": false,
-    "showDecreaseToZero": false,
-    "showIncrease": false,
-    "showIncreaseFromZero": true
+   "origin": {
+     "latitude": 45.501690,
+     "longitude": -73.567253
+   }
   }
 }
