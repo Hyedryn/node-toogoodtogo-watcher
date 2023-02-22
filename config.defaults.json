@@ -45,6 +45,11 @@
         "smtpPassword": "myPassword",
         "smtpEmail": "myUserName@gmail.com",
         "recipient": "email@test.com"
+      },
+      "ntfy": {
+        "enabled": false,
+        "url": "https://ntfy.sh/",
+        "priority": 5
       }
     },
     "messageFilter": {
