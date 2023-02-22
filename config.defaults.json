@@ -1,5 +1,6 @@
 {"email": {},
  "uuid": {
+   "enabled": true,
     "api": {
       "credentials": {
         "email": "Email of your TooGoodToGo account."

@@ -77,12 +77,14 @@ switch (argv._[0]) {
     let dicEmail = config.get("email");
 
     for (let emailUUID in dicEmail){
-      await createTelegramBot(emailUUID);
-      pollFavoriteBusinesses$(hasListeners$(emailUUID), emailUUID).subscribe({
-        next: (businesses) => notifyIfChanged(businesses, emailUUID),
-        error: console.error,
-      });
-      console.log(`Launched ${emailUUID}:${dicEmail[emailUUID]}`);
+      if (config.get(`${emailUUID}.enabled`)){
+        await createTelegramBot(emailUUID);
+        pollFavoriteBusinesses$(hasListeners$(emailUUID), emailUUID).subscribe({
+          next: (businesses) => notifyIfChanged(businesses, emailUUID),
+          error: console.error,
+        });
+        console.log(`Launched ${emailUUID}:${dicEmail[emailUUID]}`);
+      }
     }
     break;
 }
