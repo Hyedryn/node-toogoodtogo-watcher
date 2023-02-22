@@ -82,7 +82,7 @@ switch (argv._[0]) {
         next: (businesses) => notifyIfChanged(businesses, emailUUID),
         error: console.error,
       });
-      console.log("DONE");
+      console.log(`Launched ${emailUUID}:${dicEmail[emailUUID]}`);
     }
     break;
 }
