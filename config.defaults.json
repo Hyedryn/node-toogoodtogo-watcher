@@ -1,4 +1,8 @@
 {"email": {},
+  "api": {
+    "headers": {},
+    "prefixUrl": "http://localhost:3000/?url=https://apptoogoodtogo.com/api/" # or https://apptoogoodtogo.com/api/
+  },
  "uuid": {
    "enabled": true,
     "api": {
