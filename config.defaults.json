@@ -7,8 +7,6 @@
       },
       "session": {},
       "deviceType": "IOS",
-      "headers": {
-      },
       "pollingIntervalInMs": 30000,
       "authenticationIntervalInMS": 3600000
     },
